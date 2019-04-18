@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KK支付回调</title>
+    <title>Bee支付回调</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <h1 class="page-header text-center">支付回调测试 <small>KKpay</small></h1>
+    <h1 class="page-header text-center">支付回调测试 <small>BeePay</small></h1>
     <div class="form-horizontal">
         <div class="form-group">
             <label for="orderAmount" class="col-sm-4 control-label">充值金额</label>
@@ -20,13 +20,12 @@
         <div class="form-group">
             <label for="prdOrdNo" class="col-sm-4 control-label">订单编号</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" id="prdOrdNo" placeholder="201809291630507410" value="">
+                <input type="text" class="form-control" id="prdOrdNo" placeholder="201904181630507410" value="">
             </div>
         </div>
         <div class="form-group">
             <label for="notifyUrl" class="col-sm-4 control-label">回调地址</label>
             <div class="col-sm-4">
-                <!--<input type="text" class="form-control" id="notifyUrl" value="http://api.pay.me/api/pay/notify/kkpay">-->
                 <input type="text" class="form-control" id="notifyUrl" value="http://api.me/notify?t_channel=BeePay">
             </div>
         </div>
