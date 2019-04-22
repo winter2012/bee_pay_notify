@@ -34,7 +34,7 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 $response = curl_exec($ch);
 if( curl_errno($ch) ) {
-    echo "curl请求异常,错误码:".curl_errno($ch).",错误信息:".curl_error($ch);
+    exit("curl请求异常,错误码:".curl_errno($ch).",错误信息:".curl_error($ch));
 }
 curl_close($ch);
 echo $response;
